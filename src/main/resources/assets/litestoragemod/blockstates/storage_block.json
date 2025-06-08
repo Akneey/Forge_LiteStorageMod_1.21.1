@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "litestoragemod:block/storage_block"
+    }
+  }
+}

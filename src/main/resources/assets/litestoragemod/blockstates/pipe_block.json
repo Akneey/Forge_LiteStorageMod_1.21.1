@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "litestoragemod:block/pipe_block"
+    }
+  }
+}
