@@ -14,8 +14,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static net.minecraft.world.item.Items.registerBlock;
-
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, LiteStorageMod.MOD_ID);
@@ -25,8 +23,8 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> PIPE_BLOCK = registerBlock("pipe_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.04f).requiresCorrectToolForDrops().sound(SoundType.GLASS)));
+            () -> new PipeBlock(BlockBehaviour.Properties.of()
+                    .strength(0.04f).noOcclusion().sound(SoundType.GLASS)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

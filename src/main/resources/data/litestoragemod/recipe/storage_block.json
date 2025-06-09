@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    },
+    "X": {
+      "item": "minecraft:hopper"
+    },
+    "C": {
+      "item": "litestoragemod:digicrystal"
+    }
+  },
+
+  "pattern": [
+    "###",
+    "#CX",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "litestoragemod:storage_block"
+  }
+}
