@@ -2,5 +2,9 @@
   "item.litestoragemod.digicrystal": "Digicrystal Gem",
 
   "block.litestoragemod.storage_block": "Storage block",
-  "block.litestoragemod.pipe_block": "Pipe block"
+  "block.litestoragemod.pipe_block": "Pipe block",
+
+
+  "creativetab.litestoragemod.digicrystal_items": "Items of Storage Block",
+  "creativetab.litestoragemod.digicrystal_blocks": "Blocks of Storage Block"
 }

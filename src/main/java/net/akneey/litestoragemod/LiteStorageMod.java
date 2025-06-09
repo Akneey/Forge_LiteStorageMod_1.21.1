@@ -2,6 +2,7 @@ package net.akneey.litestoragemod;
 
 import com.mojang.logging.LogUtils;
 import net.akneey.litestoragemod.block.ModBlocks;
+import net.akneey.litestoragemod.item.ModCreativeModeTabs;
 import net.akneey.litestoragemod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,8 @@ public class LiteStorageMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
