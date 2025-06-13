@@ -1,0 +1,20 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "all": "litestoragemod:block/pipe_block"
+  },
+  "elements": [
+    {
+      "from": [6, 6, 10],
+      "to": [10, 10, 16],
+      "faces": {
+        "north": { "texture": "#all" },
+        "south": { "texture": "#all" },
+        "east":  { "texture": "#all" },
+        "west":  { "texture": "#all" },
+        "up":    { "texture": "#all" },
+        "down":  { "texture": "#all" }
+      }
+    }
+  ]
+}

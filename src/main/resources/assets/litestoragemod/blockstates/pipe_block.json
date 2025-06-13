@@ -1,7 +1,11 @@
 {
-  "variants": {
-    "": {
-      "model": "litestoragemod:block/pipe_block"
-    }
-  }
+  "multipart": [
+    { "apply": { "model": "litestoragemod:block/pipe_block_core" } },
+    { "when": { "north": true }, "apply": { "model": "litestoragemod:block/pipe_block_arm_north" } },
+    { "when": { "south": true }, "apply": { "model": "litestoragemod:block/pipe_block_arm_south" } },
+    { "when": { "east": true },  "apply": { "model": "litestoragemod:block/pipe_block_arm_east" } },
+    { "when": { "west": true },  "apply": { "model": "litestoragemod:block/pipe_block_arm_west" } },
+    { "when": { "up": true },    "apply": { "model": "litestoragemod:block/pipe_block_arm_up" } },
+    { "when": { "down": true },  "apply": { "model": "litestoragemod:block/pipe_block_arm_down" } }
+  ]
 }

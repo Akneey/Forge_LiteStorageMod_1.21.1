@@ -50,14 +50,7 @@ public class LiteStorageMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.DIGICRYSTAL);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-            event.accept(ModBlocks.STORAGE_BLOCK);
-            event.accept(ModBlocks.PIPE_BLOCK);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
