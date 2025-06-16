@@ -2,8 +2,11 @@ package net.akneey.litestoragemod;
 
 import com.mojang.logging.LogUtils;
 import net.akneey.litestoragemod.block.ModBlocks;
+import net.akneey.litestoragemod.client.ModClientEvents;
 import net.akneey.litestoragemod.item.ModCreativeModeTabs;
 import net.akneey.litestoragemod.item.ModItems;
+import net.akneey.litestoragemod.registry.ModBlockEntities;
+import net.akneey.litestoragemod.registry.ModMenus;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -37,6 +40,10 @@ public class LiteStorageMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register();
+        ModMenus.register();
+        ModClientEvents.init(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

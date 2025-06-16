@@ -19,7 +19,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, LiteStorageMod.MOD_ID);
 
     public static final RegistryObject<Block> STORAGE_BLOCK = registerBlock("storage_block",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new StorageBlock(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> PIPE_BLOCK = registerBlock("pipe_block",
